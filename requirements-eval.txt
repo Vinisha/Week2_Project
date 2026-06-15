@@ -1,0 +1,7 @@
+# Evaluation-only deps (RAGAS uses Claude as judge + Nebius for embeddings).
+# Kept separate so the serving app stays light. RAGAS APIs move between minor
+# versions — this code targets the 0.2.x line.
+ragas>=0.2,<0.3
+langchain-anthropic>=0.2
+langchain-openai>=0.2
+pandas>=2.0

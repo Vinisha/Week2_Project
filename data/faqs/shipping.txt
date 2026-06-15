@@ -1,0 +1,12 @@
+Shipping Information
+
+Standard shipping takes 3 to 5 business days and is free on orders over $50.
+Orders under $50 have a flat shipping fee of $4.99.
+
+Express shipping takes 1 to 2 business days and costs $12.99.
+
+We currently ship within the United States and Canada. International shipping is
+not available at this time.
+
+You can track your order at any time from the Orders tab in the app. A tracking
+number is emailed to you as soon as your order ships.

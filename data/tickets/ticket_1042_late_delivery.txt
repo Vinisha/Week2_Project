@@ -1,0 +1,12 @@
+Support Ticket #1042
+
+Subject: Order arrived later than the estimated date
+
+Customer: My order was supposed to arrive in 3-5 business days with standard
+shipping but it took 8 days.
+
+Agent resolution: Apologized for the delay. Standard shipping estimates are 3 to
+5 business days but can occasionally be delayed by the carrier during peak
+periods. We do not refund standard shipping fees for carrier delays, but as a
+goodwill gesture we issued a $5 store credit. If an order has not arrived within
+10 business days, customers should contact support to open a lost-package claim.

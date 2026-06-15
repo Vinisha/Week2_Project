@@ -1,0 +1,10 @@
+{"question": "How long do refunds take to process?", "ground_truth": "Refunds are issued to your original payment method within 5 to 7 business days after we receive the returned item."}
+{"question": "How many days do I have to return an item?", "ground_truth": "You can return most items within 30 days of delivery, provided they are unused and in the original packaging."}
+{"question": "Is shipping free?", "ground_truth": "Standard shipping is free on orders over $50. Orders under $50 have a flat $4.99 shipping fee."}
+{"question": "How fast is express shipping and what does it cost?", "ground_truth": "Express shipping takes 1 to 2 business days and costs $12.99."}
+{"question": "Do you ship internationally?", "ground_truth": "No. We currently ship only within the United States and Canada; international shipping is not available."}
+{"question": "How do I reset my password?", "ground_truth": "Tap 'Forgot password?' on the login screen and enter your email. We send a reset link that is valid for 30 minutes."}
+{"question": "How do I turn on two-factor authentication?", "ground_truth": "Go to Settings > Security > Two-factor authentication and follow the prompts; you can use an authenticator app or SMS codes."}
+{"question": "My order was 8 days late with standard shipping. Can I get the shipping fee refunded?", "ground_truth": "Standard shipping fees are not refunded for carrier delays, though a goodwill store credit may be offered. If an order has not arrived within 10 business days, contact support to open a lost-package claim."}
+{"question": "Which items cannot be returned?", "ground_truth": "Gift cards, downloadable software, and perishable goods cannot be returned."}
+{"question": "What is the CEO's personal mobile phone number?", "ground_truth": "This information is not available in the support content and should be escalated to a human."}
