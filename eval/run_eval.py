@@ -27,12 +27,8 @@ from ragas import EvaluationDataset, evaluate
 from ragas.dataset_schema import SingleTurnSample
 from ragas.embeddings import LangchainEmbeddingsWrapper
 from ragas.llms import LangchainLLMWrapper
-from ragas.metrics import (
-    Faithfulness,
-    LLMContextPrecisionWithReference,
-    LLMContextRecall,
-    ResponseRelevancy,
-)
+from ragas.metrics import Faithfulness, ResponseRelevancy
+from ragas.run_config import RunConfig
 
 from app.config import settings
 from app.generate import answer
@@ -83,7 +79,13 @@ def main():
         print("No answered samples to score.")
         return
 
-    judge = LangchainLLMWrapper(ChatAnthropic(model=settings.gen_model, max_tokens=1024))
+    # Fast judge + explicit per-call timeout so a wedged API call can't hang
+    # the whole run (that was the failure mode with the Sonnet judge).
+    judge = LangchainLLMWrapper(
+        ChatAnthropic(
+            model="claude-haiku-4-5", max_tokens=1024, timeout=60, max_retries=2
+        )
+    )
     embeddings = LangchainEmbeddingsWrapper(
         OpenAIEmbeddings(
             model=settings.embed_model,
@@ -93,18 +95,23 @@ def main():
             # Nebius rejects tiktoken token-id input ("Tokenized input is not
             # supported"); send raw strings instead.
             check_embedding_ctx_length=False,
+            timeout=30,      # fail fast instead of hanging the run
+            max_retries=2,
         )
     )
 
+    # The two metrics that map to the targets (context precision/recall were 1.0).
     metrics = [
         Faithfulness(llm=judge),
         ResponseRelevancy(llm=judge, embeddings=embeddings),
-        LLMContextPrecisionWithReference(llm=judge),
-        LLMContextRecall(llm=judge),
     ]
 
     dataset = EvaluationDataset(samples=samples)
-    result = evaluate(dataset=dataset, metrics=metrics)
+    result = evaluate(
+        dataset=dataset,
+        metrics=metrics,
+        run_config=RunConfig(timeout=60, max_workers=3, max_retries=2),
+    )
 
     df = result.to_pandas()
     base_cols = {"user_input", "response", "retrieved_contexts", "reference"}

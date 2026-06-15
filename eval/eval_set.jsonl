@@ -7,4 +7,27 @@
 {"question": "How do I turn on two-factor authentication?", "ground_truth": "Go to Settings > Security > Two-factor authentication and follow the prompts; you can use an authenticator app or SMS codes."}
 {"question": "My order was 8 days late with standard shipping. Can I get the shipping fee refunded?", "ground_truth": "Standard shipping fees are not refunded for carrier delays, though a goodwill store credit may be offered. If an order has not arrived within 10 business days, contact support to open a lost-package claim."}
 {"question": "Which items cannot be returned?", "ground_truth": "Gift cards, downloadable software, and perishable goods cannot be returned."}
+{"question": "How do I start a return?", "ground_truth": "Open the Orders tab in the app, select the order, and tap 'Return item'. You will receive a prepaid shipping label by email."}
+{"question": "Do I have to pay to ship a return back?", "ground_truth": "You receive a prepaid shipping label for the return. Shipping costs are non-refundable unless the return is due to our error, such as a defective or wrong item."}
+{"question": "Can I return an item I have already used?", "ground_truth": "No. To be eligible for a return the item must be unused and in the same condition you received it, in the original packaging."}
+{"question": "What condition does an item need to be in to be returned?", "ground_truth": "It must be unused, in the same condition you received it, and in the original packaging."}
+{"question": "How will I receive my refund?", "ground_truth": "Refunds are issued to your original payment method within 5 to 7 business days after we receive the returned item."}
+{"question": "How long does standard shipping take?", "ground_truth": "Standard shipping takes 3 to 5 business days."}
+{"question": "What is the shipping cost on a $40 order?", "ground_truth": "Orders under $50 have a flat shipping fee of $4.99."}
+{"question": "Do I get free shipping on a $60 order?", "ground_truth": "Yes. Standard shipping is free on orders over $50."}
+{"question": "How do I track my order?", "ground_truth": "You can track your order at any time from the Orders tab in the app. A tracking number is emailed to you as soon as your order ships."}
+{"question": "When do I get my tracking number?", "ground_truth": "A tracking number is emailed to you as soon as your order ships."}
+{"question": "Can you ship to the United Kingdom?", "ground_truth": "No. Shipping is only available within the United States and Canada; international shipping is not available."}
+{"question": "What are the password requirements when creating an account?", "ground_truth": "Your password must be at least 8 characters."}
+{"question": "How do I create an account?", "ground_truth": "Download the app, tap Sign up, enter your email address and create a password of at least 8 characters, then verify your email by tapping the link sent to you."}
+{"question": "Can I use SMS for two-factor authentication?", "ground_truth": "Yes. You can use an authenticator app or receive codes by SMS."}
+{"question": "What happens to my order history if I delete my account?", "ground_truth": "Deleting your account is permanent and removes your order history after 30 days."}
+{"question": "Is deleting my account reversible?", "ground_truth": "No. Deleting your account is permanent."}
+{"question": "My order has not arrived after 12 business days. What should I do?", "ground_truth": "If an order has not arrived within 10 business days, contact support to open a lost-package claim."}
+{"question": "Why might my standard shipping be delayed?", "ground_truth": "Standard shipping estimates of 3 to 5 business days can occasionally be delayed by the carrier during peak periods."}
+{"question": "I'm ordering something for $45. How much is shipping and how long will it take?", "ground_truth": "Orders under $50 have a flat $4.99 shipping fee, and standard shipping takes 3 to 5 business days."}
+{"question": "Is two-factor authentication required?", "ground_truth": "Two-factor authentication is not required, but it is strongly recommended to keep your account secure."}
 {"question": "What is the CEO's personal mobile phone number?", "ground_truth": "This information is not available in the support content and should be escalated to a human."}
+{"question": "Do you offer a student discount?", "ground_truth": "This information is not available in the support content and should be escalated to a human."}
+{"question": "Can I change my order after placing it?", "ground_truth": "This information is not available in the support content and should be escalated to a human."}
+{"question": "What is your mailing address for returns?", "ground_truth": "This information is not available in the support content and should be escalated to a human."}
